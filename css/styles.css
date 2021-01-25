@@ -102,7 +102,7 @@ h1  {
     margin: 30px;
 }
 
-.player-image   {
+.player-image-mikita   {
     grid-area: player-image;
     background:url("../main/images/patrick-kane.png");
     border-top-left-radius: 15px;
@@ -157,9 +157,41 @@ h4  {
     transform: scale(1.02);
     box-shadow: 5px 5px 50px white;
 }
-.player-image-2   {
+.player-image-toews   {
     grid-area: player-image;
     background:url("../main/images/toews.png");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    background-size: cover;
+}
+.player-image-wilson   {
+    grid-area: player-image;
+    background:url("../main/images/wilson.png");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    background-size: cover;
+}
+.player-image-keith   {
+    grid-area: player-image;
+    background:url("../main/images/keith.png");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    background-size: cover;
+}
+.player-image-murray   {
+    grid-area: player-image;
+    background:url("../main/images/murray.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    background-size: cover;
+}
+.player-image-chelios   {
+    grid-area: player-image;
+    background:url("../main/images/chelios.jpg");
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
