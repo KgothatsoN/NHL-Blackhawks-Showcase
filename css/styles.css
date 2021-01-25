@@ -16,7 +16,7 @@ html, body{
     width: auto;
     height: auto;
 }
-.container-forwards  {
+.container-forward  {
     display: flex;
     overflow: hidden;
     align-items: center;
@@ -26,6 +26,15 @@ html, body{
     margin-top: 125px;
 }
 .container-defense  {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin-top: 125px;
+}
+.container-goalie  {
     display: flex;
     overflow: hidden;
     align-items: center;
@@ -44,6 +53,14 @@ html, body{
     top: 150px;
 }
 .heading-defense    {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position:absolute;
+    top: 700px;
+}
+.heading-goalie    {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,7 +105,22 @@ h1  {
     color: white;
 } */
 
+/* Player Card Styling */
 .player-card   {
+    display: grid;
+    grid-template-columns: 230px;
+    grid-template-rows: 150px 150px 80px;
+    grid-template-areas: "player-image" "text" "stats";
+
+    border: 30px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.013);
+    text-align: center;
+    margin: 30px;
+}
+/* Goalie Card Styling */
+.goalie-card   {
     display: grid;
     grid-template-columns: 230px;
     grid-template-rows: 150px 150px 80px;
@@ -104,7 +136,7 @@ h1  {
 
 .player-image-mikita   {
     grid-area: player-image;
-    background:url("../main/images/patrick-kane.png");
+    background:url("../main/images/mikita.jpg");
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
@@ -129,6 +161,7 @@ h2 {
     margin-top: 4px;
     margin-bottom: -20px;
 }
+/* Player card stats styling */
 .player-stats .stat   {
     display: flex;
     align-items: center;
@@ -157,14 +190,31 @@ h4  {
     transform: scale(1.02);
     box-shadow: 5px 5px 50px white;
 }
-.player-image-toews   {
+.player-image-hull   {
     grid-area: player-image;
-    background:url("../main/images/toews.png");
+    background:url("../main/images/hull.jpg");
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     background-size: cover;
 }
+.player-image-savard   {
+    grid-area: player-image;
+    background:url("../main/images/savard.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    background-size: cover;
+}
+.player-image-kane   {
+    grid-area: player-image;
+    background:url("../main/images/patrick-kane.png");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    background-size: cover;
+}
+
 .player-image-wilson   {
     grid-area: player-image;
     background:url("../main/images/wilson.png");
@@ -192,6 +242,30 @@ h4  {
 .player-image-chelios   {
     grid-area: player-image;
     background:url("../main/images/chelios.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    background-size: cover;
+}
+.goalie-image-esposito   {
+    grid-area: player-image;
+    background:url("../main/images/esposito.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    background-size: cover;
+}
+.goalie-image-hall   {
+    grid-area: player-image;
+    background:url("../main/images/hall.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    background-size: cover;
+}
+.goalie-image-crawford   {
+    grid-area: player-image;
+    background:url("../main/images/crawford.jpg");
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
