@@ -8,16 +8,54 @@ html, body{
     
 }
 
-.container  {
+.container-banner  {
     display: flex;
     overflow: hidden;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    
+    width: auto;
+    height: auto;
+}
+.container-forwards  {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin-top: 125px;
+}
+.container-defense  {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin-top: 125px;
 }
 
+.heading-forwards    {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: absolute;
+    top: 150px;
+}
+.heading-defense    {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position:absolute;
+    top: 700px;
+}
+h1  {
+    color: white;
+    text-decoration: underline;
+    font-size: 50px;
+}
 /* .banner{
     position: asoblute;
     color: white;
@@ -118,4 +156,12 @@ h4  {
 .player-card:hover{
     transform: scale(1.02);
     box-shadow: 5px 5px 50px white;
+}
+.player-image-2   {
+    grid-area: player-image;
+    background:url("../main/images/toews.png");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    background-size: cover;
 }
